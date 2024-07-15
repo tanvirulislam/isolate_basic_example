@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:isolate/isolate/isolate.compute.dart';
 import 'package:isolate/isolate/isolate.spwan.dart';
 
 class IsolateExample extends ConsumerWidget {
@@ -20,7 +21,7 @@ class IsolateExample extends ConsumerWidget {
         body: const TabBarView(
           children: [
             IsolateSpwan(),
-            Text("data 2"),
+            IsolateCompute(),
           ],
         ),
       ),
